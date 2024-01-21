@@ -1,9 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T12:56:14.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.21" etag="Oa1RMRjWYD8HOrQQ58Z5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-21T09:25:49.513Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="t5pQ9ynZPr4_qHeXo9Ws" version="22.1.21" type="github">
   <diagram name="Page-1" id="7moQnFs7sVAoRVWIeWIg">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-3" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=#66B2FF;" vertex="1" parent="1">
+          <mxGeometry x="54" y="115" width="720" height="425" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-5" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#FFFFFF;fontColor=#ffffff;strokeColor=#1BA1E2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="230" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-7" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api" vertex="1" parent="1">
+          <mxGeometry x="220" y="306" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-8" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=c_c_m" vertex="1" parent="1">
+          <mxGeometry x="220" y="182" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-9" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=cm" vertex="1" parent="1">
+          <mxGeometry x="110" y="230" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-10" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=etcd" vertex="1" parent="1">
+          <mxGeometry x="110" y="382" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-11" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=sched" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-12" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#FFFFFF;fontColor=#ffffff;strokeColor=#006EAF;gradientColor=none;gradientDirection=west;fillStyle=auto;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-13" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#FFFFFF;strokeColor=#006EAF;dashed=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-14" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=node" vertex="1" parent="1">
+          <mxGeometry x="364.59" y="314" width="70.83" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-15" value="z" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=kubelet" vertex="1" parent="1">
+          <mxGeometry x="380" y="394.67" width="40.01" height="37.67" as="geometry" />
+        </mxCell>
+        <mxCell id="W8IQEFuRYagPtBW-OAV3-16" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=k_proxy" vertex="1" parent="1">
+          <mxGeometry x="381.25" y="444" width="37.5" height="36" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
