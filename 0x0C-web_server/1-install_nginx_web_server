@@ -10,6 +10,9 @@ sudo service nginx start
 # We will reassign ownership of the web directories to our user account
 sudo chown -R $USER:$USER /var/www/html
 
+# allowing nginx in firewall
+sudo ufw allow 'Nginx HTTP'
+
 # Ensure the permissions to our web root are correctly modified
 sudo chmod -R 755 /var/www
 
