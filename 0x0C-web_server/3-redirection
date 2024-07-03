@@ -23,7 +23,7 @@ cp /var/www/index.nginx-debian.html /var/www/index.nginx-debian.html.bckp
 echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 
 # Configure/redirectme to a youtube url
-sed -i '24i\
+sudo sed -i '24i\
 	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/site-available/default
 
 #Restart Nginx
