@@ -8,7 +8,7 @@ sudo apt-get -y update && sudo apt-get -y install nginx
 sudo service nginx start
 
 # We will reassign ownership of the web directories to our user account
-sudo chown -R $USER:$USER /var/www/html
+sudo chown -R "$USER":"$USER" /var/www/html
 
 # allowing nginx in firewall
 sudo ufw allow 'Nginx HTTP'
