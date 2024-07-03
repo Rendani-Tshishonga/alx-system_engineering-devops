@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Install nginx in your web server
+
+# Start by updating packages and installing nginx
+sudo apt-get -y update && sudo apt-get -y install nginx
+
+# Start the nginx server
+sudo service nginx start
+
+# We will reassign ownership of the web directories to our user account
+sudo chown -R $USER:$USER /var/www/html
+
+# Ensure the permissions to our web root are correctly modified
+sudo chmod -R 755 /var/www
+
+# Backup default index
+cp /var/www/index.nginx-debian.html /var/www/index.nginx-debian.html.bckp
+
+# Create  a new index
+echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
+
+#Restart Nginx
+sudo service nginx restart
+
+echo -e "\n Completed. \n"
