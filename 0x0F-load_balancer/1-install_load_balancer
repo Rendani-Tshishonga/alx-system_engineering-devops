@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Install HAProxy load balancer
+
+# We will begin by updating our server packages
+sudo apt-get update
+
+# We will install haproxy package
+sudo apt-get -y install haproxy
+
+# We will start the haproxy service
+sudo service haproxy start
+
+# We will change the ownership to the config files
+sudo chown -R "$USER":"$USER" /etc/haproxy/haproxy.cfg
+
+# We will need to configure the frontend and backends of the load balancer
+echo "
+frontend pickndropserv
+    bind *:80
+    mode http
+    default_backend web_backend
+
+backend web_backend
+    balance roundrobin
+    server 254850-web-01 34.239.250.29:80 check
+    server 254850-web-02 54.160.126.116:80 check" >> /etc/haproxy/haproxy.cfg
+
+# We will need to retart the haproxy service to ensure our changes persist
+sudo service haproxy restart
+
+echo -e "\n Completed \n"
