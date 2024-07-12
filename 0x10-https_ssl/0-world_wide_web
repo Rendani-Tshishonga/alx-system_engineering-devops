@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A Bash script that returns the subdomain of the domain and
+# the IP address
+
+if [ $# -eq 1 ]; then
+    domain="www.$1 lb-01.$1 web-01.$1 web-02.$1"
+else
+    domain="$2.$1"
+fi
+
+dig $domain | awk '/ANSWER SECTION:/{getline; split($1,b,"."); \
+print "The subdomain", b[1], "is a", $4, "record and points to", $5}'
