@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A Bash script to debugg nginx server
-cat /etc/nginx/sites-available/default > /etc/nginx/sites_enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
