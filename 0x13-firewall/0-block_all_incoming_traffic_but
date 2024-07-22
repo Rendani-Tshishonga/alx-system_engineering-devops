@@ -1,0 +1,29 @@
+# A script to install ufw and configure to deny all incoming traffic except
+# TCP ports 22, 443, 80
+
+# Update existing packages
+sudo apt-get update
+
+# Install ufw firewall on the server
+sudo apt-get -y install ufw
+
+# Set default policies for incoming traffic
+sudo ufw default deny incoming
+
+#Set default policy for outgoing traffic
+sudo ufw default allow outgoing
+
+# Allow access to ssh
+sudo ufw allow 22/tcp
+
+# Allow access to HTTPS
+sudo ufw allow 443/tcp
+
+# Allow access to HTTP
+sudo ufw allow 80/tcp
+
+# Verify the added rules
+sudo ufw show added
+
+#Enable ufw once configured
+sudo ufw enable
