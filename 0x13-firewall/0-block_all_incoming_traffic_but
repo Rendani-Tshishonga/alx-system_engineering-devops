@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # A script to install ufw and configure to deny all incoming traffic except
 # TCP ports 22, 443, 80
 
