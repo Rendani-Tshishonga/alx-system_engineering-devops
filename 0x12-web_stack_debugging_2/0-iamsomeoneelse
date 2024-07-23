@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A bash script that runs a software as a different user
+
+sudo -u $1 whoami
