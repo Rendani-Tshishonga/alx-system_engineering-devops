@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Run nginx as non-root user
+
+# Add a new user
+sudo adduser nginxuser
+
+# Replace the root user with nginxuser
+sudo sed -i 's/user www-data/user nginxuser' /etc/nginx/nginx.conf
+
+# Nginx must be listening on all active IP on port 8080
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+
+# Provide user with necessary permissions
+sudo chown -R nginxuser:nginxuser /etc/nginx/nginx.conf
+
+# Restart nginx to persist changes
+sudo -u nginxuser service nginx restart
