@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""A Script that Returns todo of user"""
 import sys
 import requests
 import re
@@ -7,6 +7,7 @@ import re
 API = 'https://jsonplaceholder.typicode.com'
 
 if __name__ == "__main__":
+    """Print the employee name and completed tasks"""
     if len(sys.argv) > 1:
         if re.fullmatch(r'\d+', sys.argv[1]):
             user_id = int(sys.argv[1])
@@ -19,6 +20,7 @@ if __name__ == "__main__":
                 employee_name,
                 len(number_of_completed),
                 len(number_of_tasks)))
+            """Print the title of tasks completed"""
 
             if len(number_of_completed) > 0:
                 for task in number_of_completed:
