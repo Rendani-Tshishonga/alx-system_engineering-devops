@@ -17,14 +17,15 @@ if __name__ == "__main__":
         tasks = requests.get('{}/users/{}/todos'.format(
             API,
             user_id)).json()
-        user_dict = {"user_id": []}
+        user_dict = {user_id: []}
         for task in tasks:
             """Get the title of the task"""
             task_title = task.get('title')
             """Get completed task status"""
             task_completed = task.get('completed')
             """Append to the user_dict"""
-            user_dict["user_id"].append({"tasks": task_title,
+            user_dict[user_id].append({
+                "tasks": task_title,
                 "completed": task_completed,
                 "username": username})
         """Write data to a json file"""

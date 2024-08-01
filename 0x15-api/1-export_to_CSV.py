@@ -18,16 +18,15 @@ if __name__ == "__main__":
             API,
             user_id)).json()
     """Create a new csv file and write the data into it"""
-        with open('{}.csv'.format(user_id), 'w') as csv:
-            for task in tasks:
-                """What are the status of the tasks"""
-                tasks_completed = task.get('completed')
-                """What are the title of the tasks"""
-                task_title = task.get('title')
-                """Write data to the csv file"""
-                csv.write('"{}", "{}", "{}", "{}"\n'.format(
-                    user_id,
-                    username,
-                    tasks_completed,
-                    task_title))
-
+    with open('{}.csv'.format(user_id), 'w') as csv:
+        for task in tasks:
+            """What are the status of the tasks"""
+            tasks_completed = task.get('completed')
+            """What are the title of the tasks"""
+            task_title = task.get('title')
+            """Write data to the csv file"""
+            csv.write('"{}", "{}", "{}", "{}"\n'.format(
+                user_id,
+                username,
+                tasks_completed,
+                task_title))
