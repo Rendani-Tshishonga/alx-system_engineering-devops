@@ -3,6 +3,7 @@
 
 import requests
 
+
 def number_of_subscribers(subreddit):
     """Total number of subscribers"""
     url = "https://reddit.com/r/{}/about.json".format(subreddit)
