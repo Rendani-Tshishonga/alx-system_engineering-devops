@@ -10,6 +10,6 @@ def top_ten(subreddit):
     response = requests.get(url, allow_redirects=False).json()
     if subreddit is None:
         return None
-    data = response["data"]["children"]
+    data_list = response["data"]["children"]
     for title in data:
-        print(title.get("title"))
+        print(title.get("data").get("title"))
