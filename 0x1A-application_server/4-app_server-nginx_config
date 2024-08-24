@@ -17,6 +17,14 @@ server {
 		proxy_pass http://0.0.0.0:5000/airbnb-onepage;
 	}
 
+	location ~ ^/airbnb-dynamic/number_odd_or_even/([0-9]+)$ {
+		proxy_pass http://0.0.0.0:5001/number_odd_or_even/$1;
+	}
+
+	location /api/ {
+		proxy_pass http://0.0.0.0:5002/api/;
+	}
+
 	location / {
 		try_files $uri $uri/ =404;
 	}
